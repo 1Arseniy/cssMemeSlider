@@ -11,22 +11,25 @@
 }
 
 .carousel-wrapper {
-    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 1rem;
 }
 
 .carousel {
     display: flex;
     flex-direction: row;
-    width: 590px;
+    width: 930px;
+    height: 600px;
     overflow: hidden;
 }
 
 .picture-child {
-    height: 30vh;
-    width: 35vw;
+    object-fit: contain;
+    width: 100%;
+    border-radius: 1.2rem;
+    padding: 0 0.2em 0 0.2em;
 }
 
 .body-child-2 {
@@ -51,6 +54,7 @@
     border: 0.2rem solid #8db4e3;
     margin: 0 0.5rem 0 0.5rem;
     transition: background-color 200ms;
+    /* background-color: #8db4e3; */
 }
 
 .button:hover {
