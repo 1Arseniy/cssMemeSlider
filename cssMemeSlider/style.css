@@ -23,10 +23,15 @@
     width: 930px;
     height: 600px;
     overflow: hidden;
+    /* transition: visability .5s; */
 }
 
+/* .carousel.active {
+    visibility: visible;
+} */
+
 .picture-child {
-    object-fit: contain;
+    /* object-fit: contain; */
     width: 100%;
     border-radius: 1.2rem;
     padding: 0 0.2em 0 0.2em;
@@ -55,8 +60,32 @@
     margin: 0 0.5rem 0 0.5rem;
     transition: background-color 200ms;
     /* background-color: #8db4e3; */
+    cursor: pointer;
+    background-color: #8db4e3;
 }
 
 .button:hover {
-    background-color: #8db4e3;
+    background-color: rgba(255,255,255,0);
+}
+
+.button.active {
+    background-color: rgba(255,255,255,0);
+}
+
+@media (max-width: 1000px) and (min-width: 320px) {
+/* 
+    .body-child {
+        margin: 0 50px 0 50px;
+    } */
+
+    .body-button {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .text {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+    }
 }
