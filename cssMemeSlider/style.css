@@ -23,12 +23,13 @@
     width: 930px;
     height: 600px;
     overflow: hidden;
-    /* transition: visability .5s; */
 }
 
-/* .carousel.active {
-    visibility: visible;
-} */
+.carousel.active {
+    /* visibility: visible; */
+    transition: opacity .5s;
+    opacity: 1;
+}
 
 .picture-child {
     /* object-fit: contain; */

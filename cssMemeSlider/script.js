@@ -31,7 +31,7 @@ buttonThree.addEventListener('click', () =>{
 
 buttonFour.addEventListener('click', () =>{
     carouselImg.src = pictures[3]
-    // carousel.style.transition = `1s`
+    carousel.style.transition = `1s`
 })
 
 // const buttonIndex = null;
