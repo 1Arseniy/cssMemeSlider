@@ -25,12 +25,10 @@
     overflow: hidden;
 }
 
-.carousel.active {
-    /* visibility: visible; */
-    transition: opacity .5s;
-    opacity: 1;
+/* .carousel.active {
+    transition: transform 1s;
 }
-
+ */
 .picture-child {
     /* object-fit: contain; */
     width: 100%;
@@ -88,5 +86,9 @@
         height: 10vh;
         display: flex;
         align-items: center;
+    }
+
+    .body-child-2 {
+        flex-direction: column-reverse;
     }
 }
