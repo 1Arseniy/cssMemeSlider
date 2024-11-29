@@ -1,0 +1,94 @@
+.body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.body-child {
+    background-color: #42403f;
+    height: 100vh;
+    width: 100vw;
+}
+
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    width: 930px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.picture-child {
+    width: 100%;
+    border-radius: 1.2rem;
+    padding: 0 0.2em 0 0.2em;
+}
+
+.pictures {
+    display: flex;
+    flex-direction: row;
+}
+
+.label {
+    display: flex;
+    justify-content: center;
+}
+
+.body-child-2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4rem 0 4rem;
+}
+
+.text {
+    color: #fff;
+}
+
+.body-button {
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 1rem;
+    border: 0.2rem solid #8db4e3;
+    margin: 0 0.5rem 0 0.5rem;
+    transition: background-color 200ms;
+    background-color: #8db4e3;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: blue;
+}
+
+@media (max-width: 1000px) and (min-width: 320px) {
+    /* 
+    .body-child {
+        margin: 0 50px 0 50px;
+    } */
+
+    .body-button {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .text {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .body-child-2 {
+        flex-direction: column-reverse;
+    }
+}
